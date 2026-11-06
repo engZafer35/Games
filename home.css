@@ -20,7 +20,7 @@ body {
 }
 
 .wrap {
-  width: min(880px, calc(100% - 32px));
+  width: min(1100px, calc(100% - 40px));
   margin: 0 auto;
   padding: 28px 0 48px;
 }
@@ -38,19 +38,20 @@ h1 {
 
 .games {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 14px;
 }
 
 .card {
   display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 14px;
+  grid-template-columns: 112px 1fr;
+  gap: 20px;
   align-items: center;
   text-decoration: none;
   color: inherit;
-  padding: 12px;
-  border-radius: 20px;
+  width: 100%;
+  padding: 18px 22px;
+  border-radius: 22px;
   background: var(--glass);
   border: 1px solid var(--line);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
@@ -59,16 +60,16 @@ h1 {
 .card:hover { border-color: var(--gold); }
 
 .card img {
-  width: 84px;
-  height: 84px;
-  border-radius: 18px;
+  width: 112px;
+  height: 112px;
+  border-radius: 22px;
   object-fit: cover;
 }
 
 .card h2 {
   margin: 0;
   font-family: "Baloo 2", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.8rem;
 }
 
 .card p {
