@@ -1,0 +1,67 @@
+:root {
+  --ink: #f6f1e6;
+  --muted: rgba(246, 241, 230, 0.78);
+  --gold: #ffd36a;
+  --line: rgba(255, 220, 160, 0.22);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Nunito", sans-serif;
+  background:
+    linear-gradient(180deg, rgba(4, 10, 28, 0.62), rgba(4, 10, 28, 0.86)),
+    url("kelime-merdiveni/assets/sky.webp") center top / cover no-repeat fixed;
+}
+
+a { color: var(--gold); }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 6vw 0;
+}
+
+.nav a {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 800;
+}
+
+.sheet {
+  width: min(760px, calc(100% - 32px));
+  margin: 16px auto 56px;
+  padding: 32px 28px 24px;
+  border-radius: 28px;
+  background: rgba(6, 14, 32, 0.82);
+  border: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+h2 {
+  margin: 28px 0 8px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.4rem;
+}
+
+p, li {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 1.05rem;
+}
+
+.updated {
+  color: var(--gold);
+  font-weight: 800;
+}
