@@ -42,7 +42,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 7vw;
+  padding: 10px 5vw 0;
   background: linear-gradient(180deg, rgba(4, 10, 28, 0.72), rgba(4, 10, 28, 0));
 }
 
@@ -77,11 +77,10 @@ img { max-width: 100%; display: block; }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
   align-items: center;
-  padding: 4vh 7vw 8vh;
-  min-height: calc(100vh - 74px);
+  padding: 12px 5vw 8px;
 }
 
 .kicker {
@@ -96,17 +95,17 @@ img { max-width: 100%; display: block; }
 h1 {
   margin: 0;
   font-family: "Baloo 2", sans-serif;
-  font-size: clamp(3rem, 6vw, 5.4rem);
-  line-height: 0.95;
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  line-height: 0.98;
   font-weight: 800;
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .lede {
   max-width: 38rem;
-  margin: 18px 0 0;
-  font-size: 1.25rem;
-  line-height: 1.45;
+  margin: 10px 0 0;
+  font-size: 1.12rem;
+  line-height: 1.4;
   color: var(--muted);
 }
 
@@ -114,7 +113,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 16px;
 }
 
 .store {
@@ -151,11 +150,11 @@ h1 {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 520px;
+  padding: 0 28px 36px 0;
 }
 
 .icon-float {
-  width: min(340px, 70vw);
+  width: min(260px, 34vw);
   border-radius: 28%;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 220, 160, 0.25);
   animation: float 5.5s ease-in-out infinite;
@@ -164,10 +163,10 @@ h1 {
 .phone {
   position: absolute;
   right: 0;
-  bottom: 12px;
-  width: 190px;
-  padding: 8px;
-  border-radius: 28px;
+  bottom: 0;
+  width: 132px;
+  padding: 6px;
+  border-radius: 22px;
   background: rgba(8, 14, 28, 0.72);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -182,27 +181,27 @@ h1 {
 }
 
 .section {
-  padding: 24px 7vw 72px;
+  padding: 18px 5vw 28px;
 }
 
 .section h2 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-family: "Baloo 2", sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
 }
 
 .section .intro {
-  margin: 0 0 28px;
-  max-width: 36rem;
+  margin: 0 0 14px;
+  max-width: 40rem;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.02rem;
 }
 
 .shots {
   display: grid;
-  grid-template-columns: 1fr 0.86fr 1fr;
-  gap: 22px;
-  align-items: end;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
 }
 
 .shot {
@@ -232,12 +231,10 @@ h1 {
   font-size: 0.95rem;
 }
 
-.shot.feature { transform: translateY(-18px); }
-
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 14px;
 }
 
 .step {
@@ -274,7 +271,7 @@ h1 {
   gap: 16px;
   flex-wrap: wrap;
   align-items: center;
-  padding: 28px 7vw 40px;
+  padding: 8px 5vw 24px;
   color: var(--muted);
 }
 
@@ -319,11 +316,11 @@ h1 {
 
 @media (max-width: 900px) {
   .hero, .shots, .steps { grid-template-columns: 1fr; }
-  .hero { min-height: auto; padding-top: 2vh; }
-  .hero-art { min-height: 0; }
-  .phone { position: static; width: min(240px, 70vw); margin: 18px auto 0; }
-  .shot.feature { transform: none; }
-  .nav { padding-inline: 20px; }
-  .section, .footer { padding-inline: 20px; }
+  .hero { padding-top: 4px; }
+  .hero-art { padding: 8px 0 0; }
+  .icon-float { width: min(220px, 62vw); }
+  .phone { position: static; width: min(180px, 52vw); margin: 12px auto 0; }
+  .nav { padding-inline: 16px; }
+  .section, .footer { padding-inline: 16px; }
   .legal-wrap { width: calc(100% - 32px); padding: 24px 18px; }
 }
