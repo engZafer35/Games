@@ -36,7 +36,7 @@ h1 {
   color: var(--muted);
 }
 
-.games {
+.list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;

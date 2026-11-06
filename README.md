@@ -2,7 +2,7 @@
 
 Oyunların herkese açık tanıtım sayfaları. Oyun kaynak kodu bu repoda yoktur.
 
-Ana sayfa oyun kartlarını listeler. Kart, o oyunun klasöründeki sayfayı açar.
+The homepage lists projects in English. A card opens that project’s own page.
 
 | Oyun | Sayfa |
 | --- | --- |
