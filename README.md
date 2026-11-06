@@ -1,9 +1,11 @@
 # Games
 
-Oyunların herkese açık gizlilik metinleri. Oyun kaynak kodu bu repoda yoktur.
+Oyunların herkese açık tanıtım sayfaları. Oyun kaynak kodu bu repoda yoktur.
 
-| Oyun | Gizlilik politikası |
+| Oyun | Sayfa |
 | --- | --- |
-| Kelime Merdiveni | [kelime-merdiveni/gizlilik.md](kelime-merdiveni/gizlilik.md) |
+| Kelime Merdiveni | [kelime-merdiveni/](kelime-merdiveni/) |
 
-Play Console adresi: https://github.com/engZafer35/Games/blob/main/kelime-merdiveni/gizlilik.md
+Play Console gizlilik adresi, site yayındayken:
+
+https://engzafer35.github.io/Games/kelime-merdiveni/gizlilik.html
