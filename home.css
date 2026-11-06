@@ -1,0 +1,78 @@
+:root {
+  --ink: #f6f1e6;
+  --muted: rgba(246, 241, 230, 0.74);
+  --gold: #ffd36a;
+  --line: rgba(255, 220, 160, 0.22);
+  --glass: rgba(6, 16, 38, 0.72);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Nunito", sans-serif;
+  background:
+    linear-gradient(180deg, rgba(4, 10, 28, 0.45), rgba(4, 10, 28, 0.78)),
+    url("kelime-merdiveni/assets/sky.webp") center top / cover no-repeat fixed;
+}
+
+.wrap {
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.lede {
+  margin: 6px 0 22px;
+  color: var(--muted);
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px;
+  border-radius: 20px;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.card:hover { border-color: var(--gold); }
+
+.card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.35rem;
+}
+
+.card p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  line-height: 1.35;
+}
